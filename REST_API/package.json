@@ -1,0 +1,34 @@
+{
+	"name": "rest_api",
+	"version": "1.0.0",
+	"description": "SQLite3, nodeJS, REST API",
+	"main": "app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hariyedida/rest-api.git"
+	},
+	"keywords": [
+		"SQLite3",
+		"nodeJS",
+		"REST",
+		"API",
+		"expressJS"
+	],
+	"dependencies": {
+		"cors": "^2.8.5",
+		"express": "^4.17.3",
+		"jsonwebtoken": "^8.5.1",
+		"nodemon": "^2.0.15",
+		"sqlite": "4.0.19",
+		"sqlite3": "5.0.2"
+	},
+	"author": "hari",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/hariyedida/rest-api/issues"
+	},
+	"homepage": "https://github.com/hariyedida/rest-api#readme"
+}

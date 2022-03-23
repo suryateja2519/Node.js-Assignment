@@ -1,0 +1,47 @@
+GET http://localhost:9000/  HTTP/1.1
+
+###
+POST http://localhost:9000/register
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhhcmkiLCJpYXQiOjE2NDc5NjY5NjR9.OcmeHPwL4Nfu2tGrdGlgWQcz_x-3hg22JbwDy3wT93c
+
+{
+    "newAgency" :{
+      "id": 4,
+      "agency_name": "yedida",
+      "address_1": "VTZ",
+      "address_2": "GWK",
+      "state": "AP",
+      "city": "VTZ",
+      "agency_phone_number": 123456789
+    },
+    "newClient": {
+      "client_id": 4,
+      "agency_id": 2,
+      "name": "test",
+      "email": "abc@gmail.com",
+      "phone_number": 123456789,
+      "total_bill": 99999
+    }
+}
+
+
+###
+PATCH http://localhost:9000/update-client
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhhcmkiLCJpYXQiOjE2NDc5NjY5NjR9.OcmeHPwL4Nfu2tGrdGlgWQcz_x-3hg22JbwDy3wT93c
+
+{
+    "updateDetails":{
+      "client_id": 1,
+      "agency_id": 1,
+      "name": "test",
+      "email": "abc@gmail.com",
+      "phone_number": 123456789,
+      "total_bill": 9
+    }
+}
+
+###
+GET http://localhost:9000/details
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhhcmkiLCJpYXQiOjE2NDc5NjY5NjR9.OcmeHPwL4Nfu2tGrdGlgWQcz_x-3hg22JbwDy3wT93c
